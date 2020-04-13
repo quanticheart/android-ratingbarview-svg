@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ratingbarDefaultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Default RatingBar" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingbarDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbarDefaultText"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:numStars="5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ratingbarPngText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbarDefault"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Default RatingBar with png progress drawable" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingbarPng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbarPngText"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:progressDrawable="@drawable/ic_half" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ratingbarSvgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbarPng"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Default RatingBar with svg progress drawable" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingbarSvg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbarSvgText"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:progressDrawable="@drawable/ratingbar_svg_selector" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ratingbarSvgFixText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbarSvg"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Fixed RatingBar with svg progress drawable" />
+
+    <com.grdk.ratingbarsvg.RatingBarSvg
+        android:id="@+id/ratingbarSvgFix"
+        style="@style/TripAdvisorRanting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingbarSvgFixText"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:numStars="5" />
+
+
+</RelativeLayout>
